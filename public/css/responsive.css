@@ -1,0 +1,199 @@
+
+/* BOOTSTRAP XS */
+@media all and (min-width: 0px) and (max-width: 767px) {
+    form.std, form.std button, #home .green.box button, .purple.box button, .red.box button, .orange.box button {
+        width: calc(100% - 15px);
+    }
+
+    #imagenes .yellow select {
+        max-width: 100%;
+    }
+
+
+    header.top nav ul {
+        flex-direction: column;
+    }
+
+    header.top ul li, header.top ul li.last-menu {
+        margin: 5px 0;
+    }
+
+    header.top ul li a {
+        border: 5px double var(--black);
+        border-right: 1px solid;
+        border-left: 1px solid;
+        padding: 2px 20px;
+        text-align: center;
+    }
+
+    header.top ul li a:hover {
+        border-color: var(--black);
+    }
+
+    header.top ul li.logout a {
+        border-color: var(--dred);
+    }
+
+    header.top ul li.logout a:hover {
+        border-color: var(--dred);
+    }
+
+    form.big fieldset {
+        width: 100%;
+    }
+
+    form.big {
+        padding: 30px 10px;
+    }
+
+    form.big fieldset fieldset {
+        margin: 0;
+        margin-bottom: 10px;
+        width: 48%;
+    }
+
+    .botones {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .botones > * {
+        margin: 15px;
+    }
+
+    #statusTable, #imageTable {
+        font-size: 9px;
+    }
+
+    #imageTable th, #imageTable td, #statusTable th, #statusTable td {
+        padding: 5px;
+    }
+
+    #imageTable td, #statusTable td {
+        padding: 20px 5px;
+    }
+
+    #imageTable img, #statusTable img {
+        box-shadow: none;
+        height: auto;
+        max-width: 200px;
+        width: 100%;
+    }
+
+    #imageTable td:last-child {
+        padding-right: 12px;
+    }
+
+    #imageTable form.big label, #imageTable form.big input, #imageTable form.big select {
+    }
+
+    #imageTable th:nth-child(3) {
+        min-width: initial;
+
+    }
+
+    #statusTable tr:nth-last-child(n+2) td, #imageTable tr:nth-last-child(n+2) td {
+        border-bottom: 5px double var(--black);
+    }
+
+    #imageTable button.mini	{
+        padding: 2px 10px;
+        white-space: normal;
+    }
+
+    #imageTable th:nth-child(3) {
+        min-width: initial;
+    }
+
+    #newAssistant .purple.box {
+    }
+
+    strong.big {
+    }
+
+    .sensor > div {
+        width: 100%;
+    }
+}
+
+/* BOOTSTRAP SM */
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+    form.big fieldset {
+        width: 100%;
+    }
+
+    form.big {
+        padding: 30px 10px;
+    }
+
+    .botones {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .botones > * {
+        margin: 15px;
+    }
+
+    #imageTable, #statusTable {
+        font-size: 12px;
+    }
+
+    #imageTable img, #statusTable img {
+        height: auto;
+        max-width: 200px;
+        width: 100%;
+    }
+
+}
+
+/* BOOTSTAP MD */
+@media all and (min-width: 992px) and (max-width: 1199px) {
+
+    form.big fieldset {
+        width: 90%;
+    }
+
+}
+
+
+/* ============= EXTRA QUERIES ============= */
+
+/* 0-320 */
+@media all and (min-width: 0px) and (max-width: 320px) {
+
+}
+
+/* 0-480 */
+@media all and (min-width: 0px) and (max-width: 480px) {
+
+    .g-recaptcha, .g-recaptcha div, .g-recaptcha iframe {
+        max-width: 100% !important;
+    }
+
+    #bitacoraTable {
+        font-size: 9px;
+    }
+
+    #bitacoraTable em {
+    }
+}
+
+/* 320-480 */
+@media all and (min-width: 320px) and (max-width: 480px) {
+
+}
+
+/* 480-767 */
+@media all and (min-width: 480px) and (max-width: 767px) {
+    #bitacoraTable {
+        font-size: 11px;
+    }
+
+    #bitacoraTable em {
+    }
+
+}
+
+
