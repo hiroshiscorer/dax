@@ -196,4 +196,23 @@
 
 }
 
+/* BOOTSTRAP XS AND SM */
+@media all and (min-width: 0px) and (max-width: 991px) {
+    .bracket-main > .col {
+        flex-basis: 100%;
+        /* quitar conectores dobles */
+    }
+
+    .bracket-item::before, .bracket-item::after {
+        border-color: transparent !important;
+    }
+
+    code .ascii {
+        font-size: calc(100vw / 100) !important;
+    }
+
+    .zp-credits ul {
+        padding-left: 1em;
+    }
+}
 

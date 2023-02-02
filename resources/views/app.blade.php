@@ -26,8 +26,8 @@
     <!-- Styles -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/font-awesome.css" rel="stylesheet">
-    <link href="/css/main.css?v=1.1.0" rel="stylesheet">
-    <link href="/css/responsive.css?v=1.1.0" rel="stylesheet">
+    <link href="/css/main.css?v=1.2.0" rel="stylesheet">
+    <link href="/css/responsive.css?v=1.2.0" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,18 +36,15 @@
 <body>
 
 </body>
-<header>
+<header class="top">
     <div class="container">
         <div class="row">
             <div class="col">
                 <nav>
                     <ul>
-                        <li><a href="/"><img src="/images/logo.png" alt="SCFL logo"></a></li>
-                        <li><a href="/schedule">Schedule</a></li>
-                        <li><a href="/teams">Teams</a></li>
-                        <li><a href="/pilots">Pilots</a></li>
+                        <li class="logout last-menu"><a href="/">Home</a></li>
                         <li><a href="/rules">Rules</a></li>
-                        <li><a href="/seasons">Seasons</a></li>
+                        <li><a href="https://discord.com/invite/J5tGVAZ" target="_blank">TRA Discord Server</a></li>
                     </ul>
                 </nav>
 
@@ -56,24 +53,21 @@
     </div>
 </header>
 @yield('content')
-<footer>
+<footer class="zp-credits">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <img src="/images/logo-footer.png" alt="SCFL logo">
+
             </div>
             <div class="col-md-6">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/schedule">Schedule</a></li>
-                    <li><a href="/teams">Teams</a></li>
-                    <li><a href="/pilots">Pilots</a></li>
                     <li><a href="/rules">Rules</a></li>
-                    <li><a href="/seasons">Seasons</a></li>
-                    <li><a href="https://discord.com/invite/BgYknw7bUu" target="_blank">SCFL Discord Server</a></li>
+                    <li><a href="https://discord.com/invite/J5tGVAZ" target="_blank">TRA Discord Server</a></li>
                 </ul>
 
             </div>
+{{--
             <div class="col-md-3 footer-last">
                 <form id="pay-pal" action="https://www.paypal.com/donate" method="post" target="_top">
                     <input type="hidden" name="hosted_button_id" value="B478WUQXZZWV8" />
@@ -83,6 +77,7 @@
 
                 <p class="dev-by">Developed by Zynetik Producciones</p>
             </div>
+            --}}
         </div>
     </div>
 </footer>

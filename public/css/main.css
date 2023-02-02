@@ -186,6 +186,7 @@ textarea {
 
 main {
     min-height: calc(100vh - 131px);
+    padding: 1em 0;
 }
 
 .box {
@@ -211,6 +212,11 @@ table.box {
 .info, .cyan {
     background-color: var(--dcyan);
     box-shadow: 0 0 0 5px var(--dcyan), 12px 12px 0 5px var(--black);
+}
+
+.common, .blue {
+    background-color: var(--dblue);
+    box-shadow: 0 0 0 5px var(--dblue), 12px 12px 0 5px var(--black);
 }
 
 .warning, .yellow {
@@ -299,23 +305,14 @@ h1 {
     box-shadow: 12px 12px 0 0 var(--black);
 }
 
-.zp-credits {
-    background-color: var(--dcyan);
-    color: var(--grey);
-    text-align: center;
+.indent {
+    padding-left: 30px;
 }
 
-.zp-credits p {
-    margin: 0;
+ul.indent {
+    padding-left: 60px;
 }
 
-#userInfo {
-}
-
-#userInfo span {
-    color: var(--yellow);
-    font-weight: normal;
-}
 
 /* ====================================================== LOGIN-HOME ====================================================== */
 
@@ -405,7 +402,7 @@ strong.big {
 }
 
 
-/* ====================================================== HEADER ====================================================== */
+/* ====================================================== HEADER AND FOOTER ====================================================== */
 
 header.top {
     background-color: var(--grey);
@@ -443,6 +440,32 @@ header.top ul li.logout a {
 header.top ul li.logout a:hover {
     background-color: var(--dred);
     color: var(--grey);
+}
+
+footer {
+    background-color: var(--dcyan);
+    color: var(--grey);
+    padding: 1em 0;
+}
+
+footer a {
+    color: var(--grey);
+}
+
+footer a:hover {
+    color: var(--yellow);
+}
+
+.zp-credits p {
+    margin: 0;
+}
+
+#userInfo {
+}
+
+#userInfo span {
+    color: var(--yellow);
+    font-weight: normal;
 }
 
 /* ====================================================== BITACORA-HOME ====================================================== */
@@ -1326,3 +1349,114 @@ div.screen .matrix::before {
     font-weight: bold;
 }
 
+/* ===================================== DAX ===================================== */
+
+.bracket {
+    padding-right: 17px;
+}
+
+.bracket > .row > .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bracket-item {
+    position: relative;
+}
+.bracket-item p {
+    margin: 0.5em 0;
+}
+
+.bracket-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 0;
+    border: 0;
+    right: -33px;
+}
+.bracket-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 0;
+    border: 0;
+    border-top: 4px double #000;
+    left: -17px;
+    top: 50%;
+}
+
+.no-connectors .bracket-item::before, .no-connectors .bracket-item::after {
+    border-color: transparent !important;
+}
+
+.bracket.no-connectors .bracket-main > .col {
+    justify-content: flex-start;
+}
+
+.bracket-main > .col:first-child .bracket-item::before {
+    border: 0;
+}
+
+.bracket-item p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bracket-main > .col:first-child .bracket-item::after {
+    border-right: 4px double #000;
+    height: 89px;
+}
+
+.bracket-main > .col:nth-child(2) .bracket-item::after {
+    border-right: 4px double #000;
+    height: 177px;
+}
+
+.bracket-main > .col:nth-child(3) .bracket-item::after {
+    border-right: 4px double #000;
+    height: 354px;
+}
+
+.bracket-main > .col:last-child .bracket-item::after {
+    border: 0;
+    height: 0;
+}
+
+.bracket-main .bracket-item:nth-child(odd)::after {
+    top: 50%;
+    border-top: 4px double #000;
+}
+.bracket-main .bracket-item:nth-child(even)::after {
+    bottom: 50%;
+    border-bottom: 4px double #000;
+}
+
+.bracket-main > .col::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.bracket-main > .col:nth-last-child(1)::before {
+    content: 'Final';
+}
+.bracket-main > .col:nth-last-child(2)::before {
+    content: 'Semi-Finals';
+}
+.bracket-main > .col:nth-last-child(3)::before {
+    content: 'Quarter-Finals';
+}
+.bracket-main > .col:nth-last-child(4)::before {
+    content: 'Round of 16';
+}
+.bracket-main > .col:nth-last-child(5)::before {
+    content: 'Round of 32';
+}
+.bracket-main > .col:nth-last-child(6)::before {
+    content: 'Round of 64';
+}
